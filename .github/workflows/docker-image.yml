@@ -1,0 +1,35 @@
+name: Docker Image CI
+
+on:
+#  push:
+#    branches: [ main ]
+#  pull_request:
+#    branches: [ main ]
+  release:    # Run this workflow when a new release is published,  tag a release with the desired image version name
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Dockerhub User and Project
+      run: echo Build docker image and push to perteghella/test-dockerfile-build
+
+    - name: Login to DockerHub  # Create User/token stored in Menu -> Settings -> Secrets
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Build the latest Docker image
+      run: docker build . --file Dockerfile --tag perteghella/test-dockerfile-build:latest
+    - name: Push the latest Docker image
+      run: docker push perteghella/test-dockerfile-build:latest
+    - name: Get the version
+      id: vars
+      run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
+    - name: Build the tagged Docker image
+      run: docker tag perteghella/test-dockerfile-build:latest perteghella/test-dockerfile-build:${{steps.vars.outputs.tag}}
+    - name: Push the tagged Docker image
+      run: docker push perteghella/test-dockerfile-build:${{steps.vars.outputs.tag}}

@@ -1,0 +1,13 @@
+# Env and secrets
+*.env
+*.secrets
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
