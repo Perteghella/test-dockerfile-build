@@ -3,7 +3,7 @@
 Building our applications and turning them into Docker images is one of the best ways to deploy the application. 
 Automagically create the image form Dockerfile and then push to Dockerhub
 
-Create a new release of your code and find the image in https://hub.docker.com/repository/docker/perteghella/test-dockerfile-build/
+Create a new release of your code in github and find the image in dockerhub at https://hub.docker.com/repository/docker/perteghella/test-dockerfile-build/
 
 # How to customize
 
