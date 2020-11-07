@@ -12,10 +12,10 @@ Create a new release of your code in github and find the image in dockerhub at h
 - Create the proper Dockerfile
 - Create in Dockerhub a new REPOSITORY
 - Create in Dockerhub a new TOKEN for the REPOSITORY
-- Update in file .github/workflows/docker-image.yml the NAME/REPOSITORY
 - Create in Gitlab Menu -> Settings -> Secrets
   - DOCKERHUB_USERNAME
   - DOCKERHUB_TOKEN
+  - DOCKERHUB_REPOSITORY
  - Create a new Release in Github ( ex. 1.1 )
  - Look for the building process in Actions menu
  - Check in Dokerhub the imge tagged ( image:latest and image:1.1 )
