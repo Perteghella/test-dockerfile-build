@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
  
-    - names: Checkout
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       
     - name: Show info Dockerhub User and Repository
       run: echo Build docker image and push to ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
