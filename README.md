@@ -19,3 +19,5 @@ Create a new release of your code in Github and find the image in Dockerhub at h
  - Create a new Release in Github ( ex. 1.1 )
  - Look for the building process in Actions menu
  - Check in Dockerhub the imge tagged ( image:latest and image:1.1 )
+ 
+ > Warning: DON'T STORE ANY SENSITIVE INFORMATION in public/private repositories. For example, sensitive information can include access tokens or login credentials stored in a file in the cache path. Also, command line interface (CLI) programs like docker login can save access credentials in a configuration file. Anyone with read access can create a pull request on a repository and access the contents of the cache. Forks of a repository can also create pull requests on the base branch and access caches on the base branch.
