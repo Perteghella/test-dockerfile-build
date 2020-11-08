@@ -1,7 +1,8 @@
 [![GitHub release](https://img.shields.io/github/release/perteghella/test-dockerfile-build?style=flat)](https://github.com/perteghella/test-dockerfile-build/releases/latest)
 [![CI workflow](https://img.shields.io/github/workflow/status/perteghella/test-dockerfile-build/test?label=ci&logo=github&style=flat)](https://github.com/perteghella/test-dockerfile-build/actions?workflow=ci)
-[!(https://img.shields.io/github/languages/count/perteghella/test-dockerfile-build?style=flat)]
-[![X](https://img.shields.io/github/languages/count/perteghella/test-dockerfile-build?style=flat)]
+
+[!(https://img.shields.io/github/languages/count/perteghella/test-dockerfile-build?style=flat)](xxx)
+[![X](https://img.shields.io/github/languages/count/perteghella/test-dockerfile-build?style=flat)](yyy)
 
 # Test automatic dockerfile build to Dockerhub
 
