@@ -4,5 +4,6 @@
 FROM scratch
 LABEL authors="Giovanni Perteghella"
 COPY hello /
+COPY testfile /
 LABEL test=ok
 CMD ["/hello"]
