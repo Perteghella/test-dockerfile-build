@@ -5,5 +5,5 @@ FROM scratch
 LABEL authors="Giovanni Perteghella"
 COPY hello /
 COPY testfile /
-LABEL test=ok
+LABEL version=1.2.4
 CMD ["/hello"]
