@@ -2,6 +2,8 @@
 [![CI workflow](https://img.shields.io/github/workflow/status/perteghella/test-dockerfile-build/test?label=ci&logo=github&style=flat)](https://github.com/perteghella/test-dockerfile-build/actions?workflow=ci)
 ![](https://img.shields.io/github/languages/count/perteghella/test-dockerfile-build?style=flat)
 
+![](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
 # Test automatic dockerfile build to Dockerhub
 
 Building our applications and turning them into Docker images is one of the best ways to deploy the application. 
